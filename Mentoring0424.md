@@ -143,7 +143,7 @@ Pulling  : 대리점에서 요청하는 수만큼 본사에서..
 
 - Projection View 
 - Database View
-- **Maintenance View** // 하나의 프로그램이다라고 생각, Table 입력, 수정 , 삭제 가능
+- **Maintenance View** // 하나의 프로그램이다라고 생각, Table 입력, 수정 , 삭제 가능 ->spro의 setting 화면들은 M.View에서만들어진다. =>실무에서 가장 많이 사용
 - Help View : Search Help 만들 때 사용한다.
 
 #### Type Definition(3가지)
@@ -202,13 +202,13 @@ Pulling  : 대리점에서 요청하는 수만큼 본사에서..
 #### Technical Setting
 
 - Buffer ? (캐시메모리 같은 것...)
-  
+
   - SAP 서버가 있고 가장 하위에 DB/  SAP에 Buffer , SAP GUI, => 3tier 구조
-  
+
   - 프로그램 실행 (GUI) => SQL돌아서 DB로 => 다시 GUI에,,,
-  
+
   - 비슷한 실행 결과가 버퍼에 있으면 바로 가져올 수 있다. 디비에서 찾는 것보다  훨씬 빠르게 ..
-  
+
     
 
 #### Table Naming Rule 
@@ -239,4 +239,7 @@ Pulling  : 대리점에서 요청하는 수만큼 본사에서..
 
 #### 마지막에 Define Technical Settings을 한다. // Data class와 size category
 
-#### 
+#### ★ 속성 (유지보수 허용 체크를 했기 때문에 우리가 값을 만질 수 있다. // M.View만들때 유지보수 허용체크를 항상 해야한다.)-> field (Clinet mandt!!)-> 외래키/search help - >ref table / ref field (통화, 단위)[지정해준다.] -> Technical setting (buffer or not / Log /Table size) 
+
+### Activated 하면 끝!
+
